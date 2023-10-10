@@ -1,0 +1,60 @@
+html
+{
+    font-family: "Fira Code", sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+div
+{
+    border: solid black 2px;
+}
+
+.landing
+{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.heading
+{
+    font-size: 5em;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-col
+{
+    flex-direction: column;
+}
+
+.center
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two-col
+{
+    columns: auto 2;
+    margin: 5% 10%;
+    gap: 2em;
+}
+
+.arrow-nav
+{
+    text-decoration: none;
+    color: plum;
+}
+
+.arrow-nav:hover
+{
+    color: lavender;
+}

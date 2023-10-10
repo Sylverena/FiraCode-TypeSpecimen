@@ -6,6 +6,8 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/ArrowKeyScroll.js"></script>
 </head>
 <body>
 <div class="landing flex-center flex-col" id="landing1">
@@ -13,16 +15,16 @@
         Fira Code.<br>
         <-><-> <=//=> <-><-><br>
         <span style="font-size: 1em">A Font Specimen.</span><br><br>
-        <a class="arrow-nav" href="#landing2?currentLanding=2">\/</a>
+        <a class="arrow-nav" href="#landing2">\/</a>
     </h1>
 </div>
 <div class="flex-center flex-col landing" id="landing2">
-    <h1><a class="arrow-nav" href="#landing1?currentLanding=1">/\</a></h1>
+    <h1><a class="arrow-nav" href="#landing1">/\</a></h1>
     <h1 class="center">[artwork using ligatures here, parallax effect]</h1>
-    <h1><a class="arrow-nav" href="#landing3?currentLanding=3">\/</a></h1>
+    <h1><a class="arrow-nav" href="#landing3">\/</a></h1>
 </div>
 <div class="landing" id="landing3">
-    <h1 class="center"><a class="arrow-nav" href="#landing2?currentLanding=2">/\</a></h1>
+    <h1 class="center"><a class="arrow-nav" href="#landing2">/\</a></h1>
     <h2 class="center">Font History, Uses, Etc.</h2>
     <p class="two-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Convallis aenean et tortor at. Eu mi bibendum neque egestas congue quisque

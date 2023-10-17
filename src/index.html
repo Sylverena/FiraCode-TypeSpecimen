@@ -10,21 +10,22 @@
     <script src="scripts/ArrowKeyScroll.js"></script>
 </head>
 <body>
-<div class="landing flex-center flex-col" id="landing1">
+<div class="landing flex-center flex-col" id="landing1" style="background-color: #cfcfcf">
     <h1 class="center heading">
         Fira Code.<br>
         <-><-> <=//=> <-><-><br>
         <span style="font-size: 1em">A Font Specimen.</span><br><br>
-        <a class="arrow-nav" href="#landing2">\/</a>
     </h1>
 </div>
-<div class="flex-center flex-col landing" id="landing2">
-    <h1><a class="arrow-nav" href="#landing1">/\</a></h1>
+<h1 class="nav nav-top" id="nav-top">/\</h1>
+<h1 class="nav nav-bottom" id="nav-bottom">\/</h1>
+<div class="landing" id="landing2" style="background-color: unset; visibility: hidden">
+<!-- haha funny dummy div to make the parallax work -->
+</div>
+<div class="parallax-container flex-center flex-col">
     <h1 class="center">[artwork using ligatures here, parallax effect]</h1>
-    <h1><a class="arrow-nav" href="#landing3">\/</a></h1>
 </div>
 <div class="landing" id="landing3">
-    <h1 class="center"><a class="arrow-nav" href="#landing2">/\</a></h1>
     <h2 class="center">Font History, Uses, Etc.</h2>
     <p class="two-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Convallis aenean et tortor at. Eu mi bibendum neque egestas congue quisque

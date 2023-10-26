@@ -20,6 +20,7 @@ div
 .heading
 {
     font-size: 5em;
+    color: #404040;
 }
 
 .flex-center
@@ -27,7 +28,33 @@ div
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.flex-center.two-col
+{
+    max-width: 70vw;
+    gap: 2%;
+    min-height: 75%;
+    padding: 1%;
+}
+
+.item
+{
+    max-width: 40%;
+    padding: 1em;
+    background-color: #cfcfcf;
+}
+
+.item h3
+{
+    color: white;
+}
+
+.item.right
+{
+    position: relative;
+    top: 2em;
+    margin-bottom: 1em;
 }
 
 .flex-col
@@ -40,13 +67,6 @@ div
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-.two-col
-{
-    columns: auto 2;
-    margin: 5% 10%;
-    gap: 2em;
 }
 
 .nav:hover

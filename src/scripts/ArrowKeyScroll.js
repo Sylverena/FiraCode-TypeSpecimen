@@ -15,9 +15,10 @@ $(document).ready(function () {
                 case 'nav-top':
                     newLanding = currentLanding - "1";
                     break;
-                default:
-                    alert('id no work')
             }
+
+            checkFade(newLanding)
+
             event.preventDefault();
             window.location.replace("#landing" + newLanding)
         } else if (id === "nav-bottom")
@@ -45,6 +46,9 @@ $(document).ready(function () {
                 default:
                     return;
             }
+
+            checkFade(newLanding)
+
             event.preventDefault();
             window.location.replace("#landing" + newLanding)
         } else if (event.key === "ArrowDown")

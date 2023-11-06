@@ -32,7 +32,7 @@ div
 
 .flex-center.two-col
 {
-    max-width: 70vw;
+    max-width: 75vw;
     gap: 2%;
     min-height: 75%;
     padding: 1%;
@@ -60,6 +60,14 @@ div
 .flex-col
 {
     flex-direction: column;
+}
+
+.three-grid
+{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto;
 }
 
 .center
@@ -101,10 +109,23 @@ div
 
 .parallax-container
 {
+    opacity: 1;
     position: fixed;
     z-index: -1;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.parallax-container.fadeout
+{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.parallax-container.fadein
+{
+    opacity: 1;
+    transition: opacity 1s ease-in;
 }

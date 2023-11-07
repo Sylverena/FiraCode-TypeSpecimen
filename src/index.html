@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/ArrowKeyScroll.js"></script>
     <script src="scripts/background.js"></script>
+    <script src="scripts/variable-font-control.js"></script>
 </head>
 <body>
 <div class="landing flex-center flex-col" id="landing1" style="background-color: #cfcfcf">
@@ -24,9 +25,19 @@
     <!-- haha funny dummy div to make the parallax work -->
 </div>
 <div class="parallax-container flex-center flex-col">
-    <h1 class="center">[artwork using ligatures here, parallax effect]</h1>
+    <h1 class="center"><span
+            style="color: white; background-color: #ff99cc">Comfort</span><br><i>to</i><br><span
+            style="background-color: #cc99ff; color: white">Code</span></h1>
 </div>
-<div class="landing" id="landing3">
+<div class="parallax-container art">
+    <h1 class="center" style="top: 15%; left: 10%; rotate: 20deg"><-->
+    <br> || </h1>
+    <h1 class="center" style="top: 15%; right: 13%; rotate: -20deg"><-->
+    <br> || </h1>
+    <h1 class="center" style="bottom: 15%; left: 15%; rotate: -20deg; font-size: 2em"><--></h1>
+    <h1 class="center" style="bottom: 15%; right: 15%; rotate: 20deg; font-size: 2em"><--></h1>
+</div>
+<div class="landing" id="landing3" style="border: black 1px solid">
     <h2 class="center" style="font-size: 2.75em; color: #ff99cc">History and Uses.</h2>
     <div class="flex-center two-col center">
         <div class="item left">
@@ -35,7 +46,8 @@
                 Fira Code is derivation of Fira Sans, designed by Erik Spiekermann. Fira Sans was originally
                 commissioned by Mozilla Corporation for the now defunct FireFox OS.
             </p>
-            <p>Fira Sans was originally released in 2013 under the Apache license, then re-released in 2014 under the
+            <p>
+                Fira Sans was originally released in 2013 under the Apache license, then re-released in 2014 under the
                 SIL Open Font License.
             </p>
             <p>
@@ -44,8 +56,8 @@
                 conceived by user tonsky on GitHub.
             </p>
             <p>
-                Fira Code contains a set of ligatures for common programming character combinations, such as >=, which is
-                derived from <span style="font-variant-ligatures: none">>=</span>.
+                Fira Code contains a set of ligatures for common programming character combinations, such as >=, which
+                is derived from <span style="font-variant-ligatures: none">>=</span>.
             </p>
         </div>
         <div class="item right">
@@ -61,10 +73,67 @@
     </div>
 </div>
 <div class="landing three-grid" id="landing4">
-    <div class="three-grid">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="variable-div" style="grid-row: span 2">
+        <h4>Typeface</h4>
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>1 2 3 4 5 6 7 8 9 0</p>
+        <p>? ! @ # $ % ^ & * ( ) - _ = + ` ~ , . < > ; ' : " [ ]</p>
+        <h4>Ligatures</h4>
+        <p>
+            ++ -- /= || ||= -> => :: __ == === != !== <= >= <=> << <<< <<= >> >>> =>> >>= |= ^= 0xff 1920x1080
+            <> <~ ~> <~> !~ ~@ |> >=> =>= <$> <|> .= *** <||| ~~ /\ \/ _|_
+        </p>
+        <h4>Ligature components</h4>
+        <p style="font-variant-ligatures: none">
+            ++ -- /= || ||= -> => :: __ == === != !== <= >= <=> << <<< <<= >> >>> =>> >>= |= ^= 0xff 1920x1080
+            <> <~ ~> <~> !~ ~@ |> >=> =>= <$> <|> .= *** <||| ~~ /\ \/ _|_
+        </p>
+        <h4>Body Copy</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Morbi quis commodo odio aenean. Magna etiam tempor orci eu lobortis elementum. Nunc eget lorem
+            dolor sed viverra ipsum. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Eu ultrices
+            vitae auctor eu augue ut lectus arcu bibendum. Consequat semper viverra nam libero. Tristique risus nec
+            feugiat in fermentum posuere urna nec. Enim facilisis gravida neque convallis a. Nibh tellus molestie nunc
+            non blandit massa enim nec dui. Cursus euismod quis viverra nibh. Pharetra vel turpis nunc eget lorem dolor.
+            Id interdum velit laoreet id donec ultrices tincidunt arcu.
+        <p>Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Amet cursus sit amet dictum sit amet
+            justo donec enim. Mauris in aliquam sem fringilla ut morbi. Velit euismod in pellentesque massa placerat
+            duis ultricies lacus. Pharetra diam sit amet nisl suscipit adipiscing. Nunc sed blandit libero volutpat sed.
+            Risus quis varius quam quisque id diam. Est ultricies integer quis auctor. Eget nullam non nisi est sit
+            amet. Sem nulla pharetra diam sit amet nisl. Convallis posuere morbi leo urna molestie. Adipiscing diam
+            donec adipiscing tristique. Massa tincidunt nunc pulvinar sapien et ligula. Phasellus vestibulum lorem sed
+            risus ultricies. Euismod in pellentesque massa placerat duis ultricies lacus. Massa tincidunt nunc pulvinar
+            sapien et ligula ullamcorper malesuada proin.
+        <p>Sagittis vitae et leo duis ut diam quam nulla porttitor. Nec feugiat nisl pretium fusce id velit. Tempor
+            commodo ullamcorper a lacus vestibulum. Sed arcu non odio euismod. Id faucibus nisl tincidunt eget nullam
+            non. Lorem ipsum dolor sit amet. Quis hendrerit dolor magna eget est lorem ipsum. Felis donec et odio
+            pellentesque diam. Duis convallis convallis tellus id interdum. Amet purus gravida quis blandit turpis
+            cursus. Eget velit aliquet sagittis id. Porttitor rhoncus dolor purus non.</p>
+    </div>
+    <div class="flex-center" style="flex-direction: column">
+        <p class="center">
+            <label for="font-size-slider">Font Size:</label>
+            <input id="font-size-slider" max="72" min="8" type="range" value="16">
+            <span id="font-size-value">16</span>pt
+        </p>
+        <div class="button-container">
+            <button id="bold-button"><b>B</b></button>
+            <button id="italic-button"><i>I</i></button>
+            <button id="underline-button"><span style="text-decoration: underline">U</span></button>
+        </div>
+    </div>
+    <div class="variable-div">
+        <h3>Word Showcase</h3>
+        <p>KYMOGRAPHICS kymographics</p>
+        <p>HEMATOXYLINS hematoxylins</p>
+        <p>POLYCENTRISM polycentrism</p>
+        <p>MULTIPRONGED multipronged</p>
+        <p>LEXICOGRAPHY lexicography</p>
+        <h3>Pangrams</h3>
+        <p>Fox nymphs grab quick-jived waltz.</p>
+        <p>Bright vixens jump; dozy fowl quack.</p>
+        <p>Sphinx of Black Quartz, judge my vow!</p>
     </div>
 </div>
 </body>

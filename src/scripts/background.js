@@ -1,16 +1,16 @@
 function parallaxFadeOut()
 {
-    let parallaxContainer = $('.parallax-container')
-    parallaxContainer.removeClass('fadein')
-    parallaxContainer.addClass('fadeout')
+    let $parallaxContainer = $('.parallax-container')
+    $parallaxContainer.removeClass('fadein')
+    $parallaxContainer.addClass('fadeout')
 
 }
 
 function parallaxFadeIn()
 {
-    let parallaxContainer = $('.parallax-container')
-    parallaxContainer.removeClass('fadeout')
-    parallaxContainer.addClass('fadein')
+    let $parallaxContainer = $('.parallax-container')
+    $parallaxContainer.removeClass('fadeout')
+    $parallaxContainer.addClass('fadein')
 }
 
 function checkFade(landingNum)

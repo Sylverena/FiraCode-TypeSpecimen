@@ -2,12 +2,12 @@ $(document).ready(function () {
     $('.nav').on('click', function (event) {
         let hash = window.location.hash;
         let currentLanding = hash.substring(hash.length - 1);
-        let id = $(this).attr('id');
+        let $id = $(this).attr('id');
 
         if (currentLanding && currentLanding > "1")
         {
             let newLanding = "";
-            switch (id)
+            switch ($id)
             {
                 case 'nav-bottom':
                     newLanding = +currentLanding + +"1"
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
             event.preventDefault();
             window.location.replace("#landing" + newLanding)
-        } else if (id === "nav-bottom")
+        } else if ($id === "nav-bottom")
         {
             event.preventDefault();
             window.location.replace('#landing2')
@@ -59,6 +59,6 @@ $(document).ready(function () {
     }
 })
 
-window.onresize = function (event) {
+window.onresize = function () {
     window.location.replace('#landing1')
 }

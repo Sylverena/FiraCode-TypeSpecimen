@@ -1,13 +1,11 @@
+/* Fira Code font import */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 html
 {
     font-family: "Fira Code", sans-serif;
     overflow: hidden;
     scroll-behavior: smooth;
-}
-
-div
-{
-    border: solid black 2px;
 }
 
 .landing
@@ -47,7 +45,8 @@ div
 
 .item h3
 {
-    color: white;
+    color: #99ccff;
+    background-color: white;
 }
 
 .item.right
@@ -65,9 +64,51 @@ div
 .three-grid
 {
     display: grid;
-    width: 70vw;
+    width: 85vw;
     grid-template-columns: 50% auto;
     grid-template-rows: 50% auto;
+}
+
+.three-grid > div
+{
+    padding: 1em;
+    overflow-y: auto;
+    overflow-x: clip;
+    border: black 1px solid;
+}
+
+.button-container
+{
+    padding: 1em;
+    font-size: 2em;
+    background-color: #ff99cc;
+    border-radius: 10px;
+}
+
+.button-container > button
+{
+    padding: .5em;
+    background-color: #99ccff;
+}
+
+.button-active
+{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.underline
+{
+    text-decoration: underline;
 }
 
 .center
@@ -81,6 +122,7 @@ div
 {
     color: lavender;
 }
+
 .nav:active
 {
     color: plum;
@@ -116,6 +158,14 @@ div
     right: 0;
     bottom: 0;
     left: 0;
+    font-size: 48pt
+}
+
+.parallax-container.art > *
+{
+    position: absolute;
+    font-size: 48pt;
+
 }
 
 .parallax-container.fadeout

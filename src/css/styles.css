@@ -247,10 +247,10 @@ html
         background-color: transparent;
     }
     100% {
-        background-color: white;
+        background-color: #ff99cc;
     }
 }
 
 .flash-white {
-    animation: flashWhite 2.5s infinite alternate;
+    animation: flashWhite 4s infinite;
 }

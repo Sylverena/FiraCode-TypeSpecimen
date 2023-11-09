@@ -5,12 +5,13 @@
     <title>Fira Code.</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.png">
+    <link href="favicon.png" rel="icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/ArrowKeyScroll.js"></script>
     <script src="scripts/background.js"></script>
     <script src="scripts/variable-font-control.js"></script>
+    <script src="scripts/autoscroll.js"></script>
 </head>
 <body>
 <div class="header">
@@ -18,7 +19,7 @@
     <a href="#landing2" onclick="parallaxFadeIn()"><p>Comfort to Code</p></a>
     <a href="#landing3"><p>History</p></a>
     <a href="#landing4" onclick="parallaxFadeOut()"><p>Lab</p></a>
-    <a href="#landing5"><p>Body Copy</p></a>
+    <a href="#landing5" onclick="parallaxFadeOut()"><p>Body Copy</p></a>
 </div>
 <div class="leader flex-center flash-pink"><p style="font-size: .25em"></p></div>
 <div class="landing flex-center flex-col" id="landing1" style="background-color: #cfcfcf">
@@ -40,9 +41,9 @@
 </div>
 <div class="parallax-container art">
     <h1 class="center" style="top: 15%; left: 10%; rotate: 20deg"><-->
-    <br> || </h1>
+        <br> || </h1>
     <h1 class="center" style="top: 15%; right: 13%; rotate: -20deg"><-->
-    <br> || </h1>
+        <br> || </h1>
     <h1 class="center" style="bottom: 15%; left: 15%; rotate: -20deg; font-size: 2em"><--></h1>
     <h1 class="center" style="bottom: 15%; right: 15%; rotate: 20deg; font-size: 2em"><--></h1>
 </div>
@@ -98,27 +99,6 @@
             ++ -- /= || ||= -> => :: __ == === != !== <= >= <=> << <<< <<= >> >>> =>> >>= |= ^= 0xff 1920x1080
             <> <~ ~> <~> !~ ~@ |> >=> =>= <$> <|> .= *** <||| ~~ /\ \/ _|_
         </p>
-        <h4>Body Copy</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Morbi quis commodo odio aenean. Magna etiam tempor orci eu lobortis elementum. Nunc eget lorem
-            dolor sed viverra ipsum. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Eu ultrices
-            vitae auctor eu augue ut lectus arcu bibendum. Consequat semper viverra nam libero. Tristique risus nec
-            feugiat in fermentum posuere urna nec. Enim facilisis gravida neque convallis a. Nibh tellus molestie nunc
-            non blandit massa enim nec dui. Cursus euismod quis viverra nibh. Pharetra vel turpis nunc eget lorem dolor.
-            Id interdum velit laoreet id donec ultrices tincidunt arcu.
-        <p>Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Amet cursus sit amet dictum sit amet
-            justo donec enim. Mauris in aliquam sem fringilla ut morbi. Velit euismod in pellentesque massa placerat
-            duis ultricies lacus. Pharetra diam sit amet nisl suscipit adipiscing. Nunc sed blandit libero volutpat sed.
-            Risus quis varius quam quisque id diam. Est ultricies integer quis auctor. Eget nullam non nisi est sit
-            amet. Sem nulla pharetra diam sit amet nisl. Convallis posuere morbi leo urna molestie. Adipiscing diam
-            donec adipiscing tristique. Massa tincidunt nunc pulvinar sapien et ligula. Phasellus vestibulum lorem sed
-            risus ultricies. Euismod in pellentesque massa placerat duis ultricies lacus. Massa tincidunt nunc pulvinar
-            sapien et ligula ullamcorper malesuada proin.
-        <p>Sagittis vitae et leo duis ut diam quam nulla porttitor. Nec feugiat nisl pretium fusce id velit. Tempor
-            commodo ullamcorper a lacus vestibulum. Sed arcu non odio euismod. Id faucibus nisl tincidunt eget nullam
-            non. Lorem ipsum dolor sit amet. Quis hendrerit dolor magna eget est lorem ipsum. Felis donec et odio
-            pellentesque diam. Duis convallis convallis tellus id interdum. Amet purus gravida quis blandit turpis
-            cursus. Eget velit aliquet sagittis id. Porttitor rhoncus dolor purus non.</p>
     </div>
     <div class="flex-center" style="flex-direction: column">
         <p class="center">
@@ -145,9 +125,61 @@
         <p>Sphinx of Black Quartz, judge my vow!</p>
     </div>
 </div>
-<div class="landing" id="landing5">
-    <h1 style="margin-left: 5vw">Body copy</h1>
-    <div class="grid" style=""></div>
+<div class="landing grid" id="landing5" style="grid-template-rows: min-content 1fr 1fr">
+    <h1><span style="background-color: #ff99cc; color: #404040">&nbsp;Body copy&nbsp;</span></h1>
+    <div class="laser-animation-container">
+
+    </div>
+    <div class="bc-1 scrolling-div" style="font-size: 2em;">
+        <p style="background-color: #ff99cc; line-height: .8em; letter-spacing: .1em; word-spacing: -.5em">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean. Magna
+            etiam tempor orci eu lobortis elementum. Nunc eget lorem...
+        <p style="border: #404040 1px solid; rotate: 180deg; text-align: right"><em>dolor sed viverra ipsum. Convallis
+            tellus id interdum
+            velit laoreet id donec ultrices tincidunt. Eu ultrices
+            vitae auctor eu augue ut lectus arcu bibendum.
+            <span style="display: block; rotate: 180deg; text-align: left;background-color: #222222; color: white">Consequat semper viverra nam libero.</span>
+            Tristique risus nec feugiat in fermentum posuere urna nec. Enim facilisis gravida neque convallis a...</em>
+        <p style="background-color: #99ccff; color: white; text-align: justify; letter-spacing: -5px">Nibh tellus
+            molestie nunc
+            non blandit massa enim nec dui. Cursus euismod quis viverra nibh. Pharetra vel turpis nunc eget lorem dolor.
+            Id interdum velit laoreet id donec ultrices tincidunt arcu...
+        </p>
+    </div>
+    <div class="">
+        <pre style="line-height: 1em">
+Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies.
+Amet cursus sit amet dictum sit amet justo donec enim. Mauris in aliqu-
+am sem fringilla ut morbi. Velit euismod in pellentesque massa placera.
+<span style="background-color: #cc99ff; color: #222222; display: block">
+    Duis ultricies lacus. Pharetra diam sit amet nisl suscipit
+    adipisc est. Nunc sed blandit libero volutpat se ductus es.
+
+</span>Risus quis varius quam quisque id diam. Est ultricies integer quis auc-
+    tor. Eget nullam non nisi est sit amet. Sem nulla pharetra diam sit
+            amet nisl. Convallis posuere morbi leo urna molestie. Adip-
+                iscing diam donec adipiscing tristique. Massa tincidunt
+                    nunc pulvinar sapien et ligula. Phasellus vestibule
+                        loremsed risus ultricies. Euismod in pellentesq
+                            ue massa placerat duis ultricies lacus. Ma-
+                                sa tincidunt nunc pulvinarsapien et li-
+                                    ula ullamcorper malesuada proin <span
+                style="font-style: italic; font-weight: bolder; background-color: #404040; color: white">es.</span>
+    </pre>
+    </div>
+    <div style="padding: 0 15rem;" id="diagonal-p-container">
+        <div style="background-color: #cc99ff"><p class="diagonal-p" style="text-align: justify; rotate: -45deg; mix-blend-mode: color-burn">
+            Sagittis vitae et leo duis ut diam quam nulla porttitor. Nec feugiat nisl pretium fusce id velit. Tempor
+            commodo ullamcorper a lacus vestibulum. Sed arcu non odio euismod. Id faucibus nisl tincidunt eget nullam
+            non. Lorem ipsum dolor sit amet. Quis hendrerit dolor magna eget est lorem ipsum. Felis donec et odio
+            pellentesque diam. Duis convallis convallis tellus id interdum. Amet purus gravida quis blandit turpis
+            cursus. Eget velit aliquet sagittis id. Porttitor rhoncus dolor purus non.
+        </p></div>
+    </div>
+    <div>
+
+    </div>
 </div>
 </body>
 </html>

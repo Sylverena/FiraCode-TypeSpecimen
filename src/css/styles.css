@@ -6,6 +6,8 @@ html
     font-family: "Fira Code", sans-serif;
     overflow: hidden;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 .landing
@@ -75,6 +77,11 @@ html
     overflow-y: auto;
     overflow-x: clip;
     border: black 1px solid;
+}
+
+.grid.four > div
+{
+
 }
 
 .button-container
@@ -239,18 +246,43 @@ html
     border-bottom: white inset 4px;
 }
 
-@keyframes flashPink {
-    0% {
+.bc-1 > *
+{
+    padding: .5em;
+}
+
+#landing5 > div
+{
+    padding: 0 1em;
+}
+
+#diagonal-p-container:hover p
+{
+    mix-blend-mode: normal !important;
+}
+
+.laser-animation-container
+{
+    border: unset !important;
+}
+
+@keyframes flashPink
+{
+    0%
+    {
         background-color: #ff99cc;
     }
-    50% {
+    50%
+    {
         background-color: transparent;
     }
-    100% {
+    100%
+    {
         background-color: #ff99cc;
     }
 }
 
-.flash-pink {
+.flash-pink
+{
     animation: flashPink 4s infinite;
 }

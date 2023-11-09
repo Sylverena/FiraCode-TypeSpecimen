@@ -61,7 +61,7 @@ html
     flex-direction: column;
 }
 
-.three-grid
+.grid
 {
     display: grid;
     width: 85vw;
@@ -69,7 +69,7 @@ html
     grid-template-rows: 50% auto;
 }
 
-.three-grid > div
+.grid > div
 {
     padding: 1em;
     overflow-y: auto;
@@ -239,7 +239,7 @@ html
     border-bottom: white inset 4px;
 }
 
-@keyframes flashWhite {
+@keyframes flashPink {
     0% {
         background-color: #ff99cc;
     }
@@ -251,6 +251,6 @@ html
     }
 }
 
-.flash-white {
-    animation: flashWhite 4s infinite;
+.flash-pink {
+    animation: flashPink 4s infinite;
 }

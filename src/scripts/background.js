@@ -15,11 +15,11 @@ function parallaxFadeIn()
 
 function checkFade(landingNum)
 {
-    if (landingNum > 2)
+    if (+landingNum > 2)
     {
         parallaxFadeOut()
     }
-    else if (landingNum === 2)
+    else if (+landingNum <= 2)
     {
         parallaxFadeIn()
     }
